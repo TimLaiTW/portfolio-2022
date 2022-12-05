@@ -1,0 +1,28 @@
+<div class="header-container">
+    <mat-toolbar class="header">
+        <div class="vertical-gutter-small"></div>
+        <!-- TODO : Change to a logo img  -->
+        <span class="logo">TIMLAI</span>
+        <span class="spacer"></span>
+        <!-- TODO : onClick function -->
+        <button 
+            mat-flat-button 
+            class="type-body-1" 
+            aria-label="Switch to Design page" 
+            [ngStyle]="{'text-decoration': (currentPage === PageType.DESIGN) ? 'underline' : 'none'}"
+            (click)="changePage(PageType.DESIGN)">
+            Design
+        </button>
+        <div class="vertical-gutter-extra-small"></div>
+        <!-- TODO : onClick function -->
+        <button 
+            mat-flat-button 
+            class="type-body-1"
+            aria-label="Switch to About page"
+            [ngStyle]="{'text-decoration': (currentPage === PageType.ABOUT) ? 'underline' : 'none'}"
+            (click)="changePage(PageType.ABOUT)">
+            About
+        </button>
+        <div class="vertical-gutter-small"></div>
+    </mat-toolbar>
+</div>

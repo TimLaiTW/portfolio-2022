@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageType } from '../types';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portfolio-2022';
+  currentPage: PageType = PageType.HOME
+
+  PageType = PageType;
 }

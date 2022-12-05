@@ -5,13 +5,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from '../components/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DesignPageComponent } from './components/pages/design-page/design-page.component';
+import { AboutPageComponent } from './components/pages/about-page/about-page/about-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
+    HeaderComponent,
+    DesignPageComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,

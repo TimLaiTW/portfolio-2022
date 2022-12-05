@@ -1,3 +1,8 @@
-<div class="header-container">
-    <app-header></app-header>
+<app-header [(currentPage)]="currentPage"></app-header>
+
+<div *ngIf="currentPage === PageType.DESIGN">
+    <app-design-page></app-design-page>
+</div>
+<div *ngIf="currentPage === PageType.ABOUT">
+    <app-about-page></app-about-page>
 </div>

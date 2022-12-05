@@ -3,20 +3,24 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.spacer {
+    flex: 1 1 auto;
+  }
+
 .type-body-1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 0.3px;
     line-height: 1.6rem;
 }
 
 .type-body-2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2px;
     line-height: 2rem;
 }
 
 .type-body-3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1px;
     line-height: 2.4rem;
 }
