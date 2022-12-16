@@ -1,21 +1,13 @@
 .logo {
   font-size: 3rem;
-  padding: 0;
   border: none;
   background: none;
   cursor: pointer
 }
 
-.spacer {
-  flex: 1 1 auto;
-}
-
-// .header-container {
-//   padding: 3rem 0;
-// }
-
 .header {
-  background-color:transparent
+  background-color:transparent;
+  padding: 0;
 }
 
 .mat-flat-button {

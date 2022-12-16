@@ -4,29 +4,36 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { Header } from './header/header';
 import { DesignPage } from './pages/design-page';
 import { AboutPage } from './pages/about-page';
+import { ProjectCard } from './project-card/project-card';
 
 /** Components module */
 @NgModule({
   declarations: [
     Header,
     DesignPage,
-    AboutPage
+    AboutPage,
+    ProjectCard
   ],
   imports: [
     CommonModule,
     MatButtonModule,
     MatToolbarModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatChipsModule
   ],
   exports: [
     Header,
     DesignPage,
-    AboutPage
+    AboutPage,
+    ProjectCard
   ]
 })
 export class ComponentsModule { }

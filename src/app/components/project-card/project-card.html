@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <img mat-card-image [src]="project.details.image" alt="Photo of {{project.title}}">
+  <mat-card-title>{{project.title}}</mat-card-title>
+  <mat-card-content>
+    <p>{{project.details.content}}</p>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+    <a 
+      mat-button
+      [href]="project.details.github">
+      Github
+    </a>
+    <span class="spacer"></span>
+    <a 
+      mat-button
+      [href]="project.details.website">
+      Website
+  </a>
+  </mat-card-actions>
+</mat-card>
+  

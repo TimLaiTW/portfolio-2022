@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { PageType, DarkTheme } from 'src/types';
 
 @Component({
-  selector: 'app-header',
+  selector: 'header',
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })
