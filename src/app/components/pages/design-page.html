@@ -1,3 +1,9 @@
-<div *ngFor="let project of projects">
-    <project-card [project]="project"></project-card>
+<div class="page-container">
+    <ul class="card-group">
+        <li *ngFor="let project of projects">
+            <div class="card-item">
+                <project-card [project]="project"></project-card>
+            </div>
+        </li>
+    </ul>
 </div>

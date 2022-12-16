@@ -1,0 +1,15 @@
+.page-container {
+    padding-top: 1.6rem;
+}
+
+.card-group {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card-item {
+    padding: 1rem 0;
+}

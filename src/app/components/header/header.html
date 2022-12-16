@@ -9,8 +9,8 @@
         </button>
         <span class="spacer"></span>
         <button 
-            mat-flat-button 
-            class="type-body-1" 
+            mat-button 
+            class="type-body-1 header-button" 
             aria-label="Switch to Design page" 
             [ngStyle]="{'text-decoration': (currentPage === PageType.DESIGN) ? 'underline' : 'none'}"
             (click)="changePage(PageType.DESIGN)">
@@ -18,8 +18,8 @@
         </button>
         <div class="vertical-gutter-extra-small"></div>
         <button 
-            mat-flat-button 
-            class="type-body-1"
+            mat-button 
+            class="type-body-1 header-button"
             aria-label="Switch to About page"
             [ngStyle]="{'text-decoration': (currentPage === PageType.ABOUT) ? 'underline' : 'none'}"
             (click)="changePage(PageType.ABOUT)">
@@ -28,11 +28,11 @@
         <div class="vertical-gutter-extra-small"></div>
         <!-- TODO: add function to dark theme -->
         <button
-            mat-flat-button 
+            mat-button 
+            class="header-button"
             aria-label="Switch between light and dark mode"
             (click)="changeTheme()">
             <mat-icon aria-hidden="false" [color]="darkTheme ? 'accent' : null">dark_mode</mat-icon>
         </button>
-        <div class="vertical-gutter-small"></div>
     </mat-toolbar>
 </div>
