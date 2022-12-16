@@ -3,10 +3,10 @@ import { PageType } from 'src/types';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  templateUrl: './header.html',
+  styleUrls: ['./header.scss']
 })
-export class HeaderComponent implements OnInit {
+export class Header implements OnInit {
   @Input() currentPage!: PageType;
   @Output() currentPageChange = new EventEmitter<PageType>();
   

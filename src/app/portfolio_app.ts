@@ -3,10 +3,10 @@ import { PageType } from '../types';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './portfolio_app.html',
+  styleUrls: ['./portfolio_app.scss']
 })
-export class AppComponent {
+export class PortfolioApp {
   currentPage: PageType = PageType.HOME
 
   PageType = PageType;
