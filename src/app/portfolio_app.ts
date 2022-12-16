@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageType } from '../types';
+import { PageType, DarkTheme } from '../types';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,8 @@ import { PageType } from '../types';
   styleUrls: ['./portfolio_app.scss']
 })
 export class PortfolioApp {
-  currentPage: PageType = PageType.HOME
-
+  currentPage: PageType = PageType.HOME;
+  darkTheme: DarkTheme = false;
+  
   PageType = PageType;
 }

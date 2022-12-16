@@ -1,5 +1,7 @@
 <div class="content-container">
-    <app-header [(currentPage)]="currentPage"></app-header>
+    <app-header 
+        [(currentPage)]="currentPage"
+        [(darkTheme)]="darkTheme"></app-header>
 
     <div *ngIf="currentPage === PageType.DESIGN">
         <app-design-page></app-design-page>

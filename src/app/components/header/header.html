@@ -26,7 +26,14 @@
             (click)="changePage(PageType.ABOUT)">
             About
         </button>
-        <!-- TODO: add mode toggle -->
+        <div class="vertical-gutter-extra-small"></div>
+        <!-- TODO: add function to dark theme -->
+        <button
+            mat-flat-button 
+            aria-label="Switch between light and dark mode"
+            (click)="changeTheme()">
+            <mat-icon aria-hidden="false" [color]="darkTheme ? 'accent' : null">dark_mode</mat-icon>
+        </button>
         <div class="vertical-gutter-small"></div>
     </mat-toolbar>
 </div>

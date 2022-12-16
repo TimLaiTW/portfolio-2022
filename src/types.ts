@@ -3,3 +3,5 @@ export enum PageType {
     DESIGN = 'DESIGN',
     ABOUT = 'ABOUT'
 }
+
+export type DarkTheme = boolean;
