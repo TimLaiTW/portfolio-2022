@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { PageType, DarkTheme } from 'src/types';
+import { PageType, DarkTheme, button } from 'src/types';
 
 @Component({
   selector: 'header',
@@ -13,6 +13,16 @@ export class Header {
   @Output() darkThemeChange = new EventEmitter<DarkTheme>();
   
   PageType = PageType;
+  navButtonGroup: button[] = [
+    {
+      buttonText: PageType.DESIGN,
+      class: 'type-body-1 header-button',
+    },
+    {
+      buttonText: PageType.ABOUT,
+      class: 'type-body-1 header-button',
+    }
+  ]
 
   constructor() { }
 

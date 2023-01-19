@@ -8,24 +8,17 @@
             TIMLAI
         </button>
         <span class="spacer"></span>
-        <button 
-            mat-button 
-            class="type-body-1 header-button" 
-            aria-label="Switch to Design page" 
-            [ngStyle]="{'text-decoration': (currentPage === PageType.DESIGN) ? 'underline' : 'none'}"
-            (click)="changePage(PageType.DESIGN)">
-            Design
-        </button>
-        <div class="vertical-gutter-extra-small"></div>
-        <button 
-            mat-button 
-            class="type-body-1 header-button"
-            aria-label="Switch to About page"
-            [ngStyle]="{'text-decoration': (currentPage === PageType.ABOUT) ? 'underline' : 'none'}"
-            (click)="changePage(PageType.ABOUT)">
-            About
-        </button>
-        <div class="vertical-gutter-extra-small"></div>
+        <div *ngFor="let button of navButtonGroup">
+            <button
+                mat-button 
+                class="{{button.class}}" 
+                [attr.aria-label]="'Switch to' + button.buttonText"
+                [ngStyle]="{'text-decoration': (currentPage === button.buttonText) ? 'underline' : 'none'}"
+                (click)="changePage(button.buttonText)">
+                {{button.buttonText}}
+            </button>
+            <div class="vertical-gutter-extra-small"></div>
+        </div>
         <!-- TODO: add function to dark theme -->
         <button
             mat-button 

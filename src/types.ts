@@ -19,3 +19,8 @@ export declare interface Project {
     title: string,
     details: ProjectDetail
 }
+
+export declare interface button {
+    buttonText: PageType,
+    class: string
+}
