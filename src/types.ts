@@ -20,7 +20,7 @@ export declare interface Project {
     details: ProjectDetail
 }
 
-export declare interface button {
+export declare interface Button {
     buttonText: PageType,
     class: string
 }
